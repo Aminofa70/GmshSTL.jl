@@ -21,6 +21,10 @@ jobs:
           version: '1.12'
 
       - uses: julia-actions/cache@v2
+        with:
+          cache-registries: true
+          cache-packages: true
+          cache-artifacts: true
 
       - name: Install Julia dependencies
         run: |
@@ -30,10 +34,11 @@ jobs:
             Pkg.instantiate()
           '
 
-      - name: Clean broken Node install
+      - name: Fix Rollup optional dependency
         run: |
-          rm -rf docs/node_modules
-          rm -f docs/package-lock.json
+          cd docs
+          rm -rf node_modules package-lock.json
+          npm install rollup @rollup/rollup-linux-x64-gnu vitepress
 
       - name: Build and deploy docs
         env:
