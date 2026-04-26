@@ -9,7 +9,7 @@ makedocs(;
     authors="Aminofa70 <amin.alibakhshi@upm.es> and contributors",
     sitename="GmshSTL.jl",
     format=DocumenterVitepress.MarkdownVitepress(;
-        repo="https://github.com/Aminofa70/GmshSTL.jl",
+        repo="github.com/Aminofa70/GmshSTL.jl.git",
         devbranch="main",
         devurl="dev",
     ),
