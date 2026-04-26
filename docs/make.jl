@@ -33,7 +33,7 @@ makedocs(;
     authors="Aminofa70 <amin.alibakhshi@upm.es> and contributors",
     sitename="GmshSTL.jl",
     format=DocumenterVitepress.MarkdownVitepress(;
-        repo="https://github.com/Aminofa70/GmshSTL.jl",
+        repo="github.com/Aminofa70/GmshSTL.jl",
         devbranch="main",
         devurl="dev",
     ),
@@ -43,8 +43,8 @@ makedocs(;
 )
 
 DocumenterVitepress.deploydocs(;
-    repo="github.com/Aminofa70/GmshSTL.jl.git",
-    target=joinpath(@__DIR__, "build"),
-    branch="gh-pages",
-    devbranch="main",
+    repo = "github.com/Aminofa70/GmshSTL.jl.git",
+    target = joinpath(@__DIR__, "build"),
+    branch = "gh-pages",
+    devbranch = "main",
 )
