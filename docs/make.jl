@@ -28,7 +28,11 @@ DocumenterVitepress.deploydocs(;
 
 ####################################################################################
 ####################################################################################
+#=
+using LiveServer
+LiveServer.serve(dir = "build/1")
 
+=#
 # using GmshSTL
 # using Documenter
 
