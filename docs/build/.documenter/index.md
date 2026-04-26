@@ -1,7 +1,7 @@
 
 
 
-# GmshSTL (Package), I have {#GmshSTL-Package,-I-have}
+# GmshSTL {#GmshSTL}
 
 Documentation for [GmshSTL](https://github.com/Aminofa70/GmshSTL.jl).
 - [`GmshSTL.gmsh_mesh_stl`](#GmshSTL.gmsh_mesh_stl-NTuple{11,%20Any})
@@ -46,7 +46,7 @@ Notes:
   
 
 
-<Badge type="info" class="source-link" text="source"><a href="https://github.com/Aminofa70/GmshSTL.jl/blob/590f8ebea91621619649dd198a87941e83330353/src/GmshSTL.jl#L7-L49" target="_blank" rel="noreferrer">source</a></Badge>
+<Badge type="info" class="source-link" text="source"><a href="https://github.com/Aminofa70/GmshSTL.jl/blob/d20d4ae50791364ed2c053eb699b748c810507e8/src/GmshSTL.jl#L7-L49" target="_blank" rel="noreferrer">source</a></Badge>
 
 </details>
 
