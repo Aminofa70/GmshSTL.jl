@@ -18,12 +18,18 @@ makedocs(;
     ],
 )
 
+# DocumenterVitepress.deploydocs(;
+#     repo = "github.com/Aminofa70/GmshSTL.jl.git",
+#     target = joinpath(@__DIR__, "build"),
+#     branch = "gh-pages",
+#     devbranch = "main",
+#     push_preview = true,
+# )
 DocumenterVitepress.deploydocs(;
-    repo = "github.com/Aminofa70/GmshSTL.jl.git",
-    target = joinpath(@__DIR__, "build"),
-    branch = "gh-pages",
-    devbranch = "main",
-    push_preview = true,
+    repo="github.com/Aminofa70/GmshSTL.jl.git",
+    target=joinpath(@__DIR__, "build"),
+    branch="gh-pages",
+    devbranch="main",
 )
 
 ####################################################################################
