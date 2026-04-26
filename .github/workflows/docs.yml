@@ -1,32 +1,33 @@
-name: Documentation
+name: Docs
 
 on:
   push:
     branches:
       - main
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  docs:
+  build-and-deploy:
+    name: Docs build and deploy
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: julia-actions/setup-julia@v2
+      - name: Install Julia
+        uses: julia-actions/setup-julia@v2
         with:
-          version: '1.12'
+          version: '1'
 
-      - uses: julia-actions/cache@v2
-        with:
-          cache-registries: true
-          cache-packages: true
-          cache-artifacts: true
+      - name: Cache Julia packages
+        uses: julia-actions/cache@v2
 
-      - name: Install Julia dependencies
+      - name: Install docs dependencies
         run: |
           julia --project=docs -e '
             using Pkg
@@ -34,7 +35,7 @@ jobs:
             Pkg.instantiate()
           '
 
-      - name: Fix Rollup optional dependency
+      - name: Fix Vitepress Rollup dependency
         run: |
           cd docs
           rm -rf node_modules package-lock.json
