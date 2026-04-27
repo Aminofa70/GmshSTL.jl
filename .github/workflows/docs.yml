@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build-and-deploy:
-    name: Docs build and deploy
+    name: Build and deploy docs
     runs-on: ubuntu-latest
 
     steps:
