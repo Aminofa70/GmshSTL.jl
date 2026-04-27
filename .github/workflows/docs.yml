@@ -35,6 +35,10 @@ jobs:
             Pkg.instantiate()
           '
 
+      - name: Clean npm dependencies
+        run: |
+          rm -rf docs/node_modules docs/package-lock.json
+
       - name: Build and deploy docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
