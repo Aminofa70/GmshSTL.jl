@@ -36,10 +36,10 @@ jobs:
           '
 
       - name: Fix Vitepress Rollup dependency
+        working-directory: docs
         run: |
-          cd docs
           rm -rf node_modules package-lock.json
-          npm install rollup @rollup/rollup-linux-x64-gnu vitepress
+          npm install
 
       - name: Build and deploy docs
         env:
