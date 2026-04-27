@@ -19,7 +19,9 @@ const baseTemp = {
 
 const navTemp = {
   nav: [
-{ text: 'Home', link: '/index' }
+{ text: 'Home', link: '/index' },
+{ text: 'Getting started', link: '/tutorials/getting-started' },
+{ text: 'API Reference', link: '/api' }
 ]
 ,
 }
@@ -96,11 +98,13 @@ export default defineConfig({
     },
     nav,
     sidebar: [
-{ text: 'Home', link: '/index' }
+{ text: 'Home', link: '/index' },
+{ text: 'Getting started', link: '/tutorials/getting-started' },
+{ text: 'API Reference', link: '/api' }
 ]
 ,
     sidebarDrawer: false,
-    editLink: { pattern: "https://https://github.com/Aminofa70/GmshSTL.jl/edit/main/docs/src/:path" },
+    editLink: { pattern: "https://github.com/Aminofa70/GmshSTL.jl/edit/main/docs/src/:path" },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Aminofa70/GmshSTL.jl' }
     ],

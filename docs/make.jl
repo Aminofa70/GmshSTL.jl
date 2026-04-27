@@ -39,12 +39,15 @@ makedocs(;
     ),
     pages=[
         "Home" => "index.md",
+        "Getting started" => "tutorials/getting-started.md",
+        "API Reference" => "api.md",
     ],
 )
 
 DocumenterVitepress.deploydocs(;
-    repo = "github.com/Aminofa70/GmshSTL.jl.git",
-    target = joinpath(@__DIR__, "build"),
-    branch = "gh-pages",
-    devbranch = "main",
+    repo="github.com/Aminofa70/GmshSTL.jl.git",
+    target=joinpath(@__DIR__, "build"),
+    branch="gh-pages",
+    devbranch="main",
+    push_preview = true
 )
