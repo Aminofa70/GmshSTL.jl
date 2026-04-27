@@ -115,7 +115,18 @@ jobs:
       - name: Install system libs
         run: |
           sudo apt-get update
-          sudo apt-get install -y xvfb libgl1-mesa-dri libglx-mesa0
+          sudo apt-get install -y \
+            xvfb \
+            libgl1-mesa-dri \
+            libglx-mesa0 \
+            libglu1-mesa \
+            libxrender1 \
+            libxrandr2 \
+            libxi6 \
+            libxcursor1 \
+            libxinerama1 \
+            libfontconfig1 \
+            libfreetype6
 
       - name: Run tests
         run: xvfb-run -a julia --project=. -e 'using Pkg; Pkg.test(coverage=true)'
