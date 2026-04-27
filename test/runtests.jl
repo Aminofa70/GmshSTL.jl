@@ -2,5 +2,5 @@ using GmshSTL
 using Test
 
 @testset "GmshSTL.jl" begin
-    # Write your tests here.
+    include("demo_0001_cube_with_hole.jl")
 end

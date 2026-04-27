@@ -1,27 +1,3 @@
-# using GmshSTL
-# using Documenter
-
-# DocMeta.setdocmeta!(GmshSTL, :DocTestSetup, :(using GmshSTL); recursive=true)
-
-# makedocs(;
-#     modules=[GmshSTL],
-#     authors="Aminofa70 <amin.alibakhshi@upm.es> and contributors",
-#     sitename="GmshSTL.jl",
-#     format=Documenter.HTML(;
-#         canonical="https://Aminofa70.github.io/GmshSTL.jl",
-#         edit_link="main",
-#         assets=String[],
-#     ),
-#     pages=[
-#         "Home" => "index.md",
-#     ],
-# )
-
-# deploydocs(;
-#     repo="github.com/Aminofa70/GmshSTL.jl",
-#     devbranch="main",
-# )
-
 using GmshSTL
 using Documenter
 using DocumenterVitepress
@@ -39,9 +15,11 @@ makedocs(;
     ),
     pages=[
         "Home" => "index.md",
-        "Getting started" => "tutorials/getting-started.md",
+        "Tutorials" => [
+            "Getting started" => "tutorials/getting-started.md",
+        ],
         "API Reference" => "api.md",
-    ],
+    ]
 )
 
 DocumenterVitepress.deploydocs(;
@@ -49,5 +27,5 @@ DocumenterVitepress.deploydocs(;
     target=joinpath(@__DIR__, "build"),
     branch="gh-pages",
     devbranch="main",
-    push_preview = true
+    push_preview=true
 )

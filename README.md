@@ -7,6 +7,7 @@
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://Aminofa70.github.io/GmshSTL.jl/dev/)
 [![Build Status](https://github.com/Aminofa70/GmshSTL.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Aminofa70/GmshSTL.jl/actions/workflows/CI.yml?query=branch%3Amain)
 [![Coverage](https://codecov.io/gh/Aminofa70/GmshSTL.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/Aminofa70/GmshSTL.jl)
+[![Tests](https://github.com/Aminofa70/GmshSTL.jl/actions/workflows/test.yml/badge.svg)](https://github.com/Aminofa70/GmshSTL.jl/actions/workflows/test.yml)
 
 # About GmshSTL
 This is a package to convert a surface mesh from STL file to tet volumetric mesh and convert it to grid of [Ferrite.jl](https://ferrite-fem.github.io/Ferrite.jl/stable/) package in order to do finite element analysis.

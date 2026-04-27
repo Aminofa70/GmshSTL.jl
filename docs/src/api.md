@@ -4,9 +4,9 @@
 CurrentModule = GmshSTL
 ```
 
-```@index
-```
 
 ```@autodocs
 Modules = [GmshSTL]
+Public = true
+Private = false
 ```

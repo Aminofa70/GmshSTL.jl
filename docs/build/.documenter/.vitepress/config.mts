@@ -20,7 +20,9 @@ const baseTemp = {
 const navTemp = {
   nav: [
 { text: 'Home', link: '/index' },
-{ text: 'Getting started', link: '/tutorials/getting-started' },
+{ text: 'Tutorials', collapsed: false, items: [
+{ text: 'Getting started', link: '/tutorials/getting-started' }]
+ },
 { text: 'API Reference', link: '/api' }
 ]
 ,
@@ -99,7 +101,9 @@ export default defineConfig({
     nav,
     sidebar: [
 { text: 'Home', link: '/index' },
-{ text: 'Getting started', link: '/tutorials/getting-started' },
+{ text: 'Tutorials', collapsed: false, items: [
+{ text: 'Getting started', link: '/tutorials/getting-started' }]
+ },
 { text: 'API Reference', link: '/api' }
 ]
 ,
