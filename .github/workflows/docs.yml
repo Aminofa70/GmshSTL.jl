@@ -35,12 +35,6 @@ jobs:
             Pkg.instantiate()
           '
 
-      - name: Fix Vitepress Rollup dependency
-        working-directory: docs
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install
-
       - name: Build and deploy docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
