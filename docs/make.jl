@@ -13,13 +13,20 @@ makedocs(;
         devbranch="main",
         devurl="dev",
     ),
-    pages=[
-        "Home" => "index.md",
-        "Tutorials" => [
-            "Getting started" => "tutorials/getting-started.md",
+    pages = [
+    "Home" => "index.md",
+
+    "Tutorials" => [
+        "Getting started" => "tutorials/getting-started.md",
+
+        "Demos" => [
+            "Demo 0001" => "tutorials/demo_0001.md",
+           # "Demo 0002" => "tutorials/demo_0002.md",
         ],
-        "API Reference" => "api.md",
-    ]
+    ],
+
+    "API Reference" => "api.md",
+]
 )
 
 DocumenterVitepress.deploydocs(;

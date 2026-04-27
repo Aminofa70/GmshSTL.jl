@@ -4,10 +4,6 @@ using Geogram, FileIO, Comodo, Comodo.GLMakie
 using ComodoFerrite, Comodo.Statistics
 GLMakie.closeall()
 
-# < 1% → very accurate
-# 1–5% → good / acceptable
-# 5–10% → moderate
-# > 10% → large
 
 fileName_mesh = joinpath(GmshSTL_dir(), "assets", "stl", "cube_3holes.stl")
 
