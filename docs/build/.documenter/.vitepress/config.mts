@@ -23,7 +23,7 @@ const navTemp = {
 { text: 'Tutorials', collapsed: false, items: [
 { text: 'Getting started', link: '/tutorials/getting-started' },
 { text: 'Demos', collapsed: false, items: [
-{ text: 'Demo 0001', link: '/tutorials/demo_0001' }]
+{ text: 'Mesh Cube 3 Holes', link: '/tutorials/demo_0001' }]
  }]
  },
 { text: 'API Reference', link: '/api' }
@@ -107,7 +107,7 @@ export default defineConfig({
 { text: 'Tutorials', collapsed: false, items: [
 { text: 'Getting started', link: '/tutorials/getting-started' },
 { text: 'Demos', collapsed: false, items: [
-{ text: 'Demo 0001', link: '/tutorials/demo_0001' }]
+{ text: 'Mesh Cube 3 Holes', link: '/tutorials/demo_0001' }]
  }]
  },
 { text: 'API Reference', link: '/api' }

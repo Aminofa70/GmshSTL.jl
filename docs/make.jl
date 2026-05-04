@@ -20,7 +20,7 @@ makedocs(;
         "Getting started" => "tutorials/getting-started.md",
 
         "Demos" => [
-            "Demo 0001" => "tutorials/demo_0001.md",
+            "Mesh Cube 3 Holes" => "tutorials/demo_0001.md",
            # "Demo 0002" => "tutorials/demo_0002.md",
         ],
     ],
