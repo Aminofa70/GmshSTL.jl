@@ -2,7 +2,7 @@
 
 julia_version = "1.12.6"
 manifest_format = "2.0"
-project_hash = "faae86de0b7d8b4fc26a33095fe3f66b33baa313"
+project_hash = "d82773e2addc1f54cd835b7cdc64ff2185edbc54"
 
 [[deps.ANSIColoredPrinters]]
 git-tree-sha1 = "574baf8110975760d391c710b6341da1afa48d8c"
@@ -83,10 +83,10 @@ uuid = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 version = "1.17.0"
 
 [[deps.DocumenterVitepress]]
-deps = ["ANSIColoredPrinters", "Base64", "DocInventories", "DocStringExtensions", "Documenter", "IOCapture", "Markdown", "NodeJS_20_jll", "REPL", "TOML"]
-git-tree-sha1 = "16ea3c51855a59f41042fd7bc5eb870d55d88568"
+deps = ["ANSIColoredPrinters", "Base64", "DocInventories", "DocStringExtensions", "Documenter", "IOCapture", "JSON", "Markdown", "NodeJS_20_jll", "REPL", "TOML"]
+git-tree-sha1 = "2f3c16a8886bcba40c4cb0dd0fd131dd93afc397"
 uuid = "4710194d-e776-4893-9690-8d956a29c365"
-version = "0.3.3"
+version = "0.3.5"
 
     [deps.DocumenterVitepress.extensions]
     DocumenterVitepressDocumenterCitationsExt = "DocumenterCitations"
